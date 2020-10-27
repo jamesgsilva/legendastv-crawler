@@ -8,7 +8,7 @@ const { LEGENDAS_URL } = process.env
 
 describe('search', () => {
   test('Quando a busca tiver paginação, então deve retornar mais', () => {
-    const html = fs.readFileSync(path.join(__dirname, './mocks/search/search-with-pagination.html'), {
+    const html = fs.readFileSync(path.join(__dirname, '../mocks/search/search-with-pagination.html'), {
       encoding: 'utf8',
       flag: 'r'
     })
@@ -30,7 +30,7 @@ describe('search', () => {
   })
 
   test('Quando a busca não tiver paginação, então não deve retornar mais', () => {
-    const html = fs.readFileSync(path.join(__dirname, './mocks/search/search-without-pagination.html'), {
+    const html = fs.readFileSync(path.join(__dirname, '../mocks/search/search-without-pagination.html'), {
       encoding: 'utf8',
       flag: 'r'
     })
@@ -42,7 +42,7 @@ describe('search', () => {
 
 describe('login', () => {
   test('Quando não logado, então não deve retornar username', () => {
-    const html = fs.readFileSync(path.join(__dirname, './mocks/login/without-username.html'), {
+    const html = fs.readFileSync(path.join(__dirname, '../mocks/login/without-username.html'), {
       encoding: 'utf8',
       flag: 'r'
     })
@@ -51,7 +51,7 @@ describe('login', () => {
   })
 
   test('Quando logado, então deve retornar username', () => {
-    const html = fs.readFileSync(path.join(__dirname, './mocks/login/with-username.html'), {
+    const html = fs.readFileSync(path.join(__dirname, '../mocks/login/with-username.html'), {
       encoding: 'utf8',
       flag: 'r'
     })
@@ -62,7 +62,7 @@ describe('login', () => {
 
 describe('likes', () => {
   test('a', () => {
-    const html = fs.readFileSync(path.join(__dirname, './mocks/download/without-likes-without-dislikes.html'), {
+    const html = fs.readFileSync(path.join(__dirname, '../mocks/download/without-likes-without-dislikes.html'), {
       encoding: 'utf8',
       flag: 'r'
     })
@@ -71,7 +71,7 @@ describe('likes', () => {
   })
 
   test('b', () => {
-    const html = fs.readFileSync(path.join(__dirname, './mocks/download/likes-without-dislikes.html'), {
+    const html = fs.readFileSync(path.join(__dirname, '../mocks/download/likes-without-dislikes.html'), {
       encoding: 'utf8',
       flag: 'r'
     })
@@ -80,7 +80,7 @@ describe('likes', () => {
   })
 
   test('b', () => {
-    const html = fs.readFileSync(path.join(__dirname, './mocks/download/likes-with-dislikes.html'), {
+    const html = fs.readFileSync(path.join(__dirname, '../mocks/download/likes-with-dislikes.html'), {
       encoding: 'utf8',
       flag: 'r'
     })
