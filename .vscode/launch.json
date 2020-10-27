@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "App",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "${workspaceFolder}/index.js",
+      "runtimeExecutable": "${env:HOME}/.nvm/versions/node/v12.19.0/bin/node",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
